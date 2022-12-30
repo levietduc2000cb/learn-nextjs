@@ -1,8 +1,23 @@
+import React from "react";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/router";
+
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push({
+      pathname: "/product/1/2",
+      query: {
+        name: "Duc",
+      },
+    });
+  };
+
   return (
     <div className={styles.container}>
       <Head>
@@ -15,7 +30,20 @@ export default function Home() {
         <h1 className={styles.title}>
           Welcome to Duc Dev to learn Nextjs Hahaha
         </h1>
-
+        <Link href="/product" legacyBehavior>
+          <a
+            style={{ color: "red", padding: "4px", backgroundColor: "yellow" }}
+          >
+            <div>
+              <p>Đây là trang page</p>
+              <p>Bạn sẽ di chuyển đến page này</p>
+            </div>
+          </a>
+        </Link>
+        <Link href="/product/1" legacyBehavior>
+          <a>Go to product Id</a>
+        </Link>
+        <button onClick={handleClick}>Push to Product Id</button>
         <p className={styles.description}>
           Get started by editing{" "}
           <code className={styles.code}>pages/index.tsx</code>
