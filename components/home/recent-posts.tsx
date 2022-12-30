@@ -21,7 +21,7 @@ const POST_LIST: Post[] = [
       "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
   },
   {
-    id: "1",
+    id: "2",
     title: "Making a design system from scratch",
     publishedDate: "12 Feb 2022",
     tagList: ["Design", "Pattern"],
@@ -29,7 +29,7 @@ const POST_LIST: Post[] = [
       "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
   },
   {
-    id: "1",
+    id: "3",
     title: "Making a design system from scratch",
     publishedDate: "12 Feb 2022",
     tagList: ["Design", "Pattern"],
@@ -37,7 +37,7 @@ const POST_LIST: Post[] = [
       "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
   },
   {
-    id: "1",
+    id: "4",
     title: "Making a design system from scratch",
     publishedDate: "12 Feb 2022",
     tagList: ["Design", "Pattern"],
@@ -48,7 +48,7 @@ const POST_LIST: Post[] = [
 
 const RecentPosts = () => {
   return (
-    <Box bgcolor={"secondary.light"}>
+    <Box bgcolor={"secondary.light"} paddingBottom={4}>
       <Container>
         <Stack
           direction="row"
