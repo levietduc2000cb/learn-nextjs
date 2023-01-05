@@ -8,6 +8,7 @@ import theme from "../utils/theme";
 import EmptyLayout from "../components/emtyLayout";
 import { AppPropsWithLayout } from "../models/common";
 import "../styles/globals.css";
+import "../styles/prism.css";
 import axiosHttp from "../utils/axiosHttp";
 
 const clientSideEmotionCache = createEmotionCache();
